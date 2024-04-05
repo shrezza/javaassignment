@@ -30,3 +30,87 @@ public class Goat {
                              + " is the largest number.");
     }
 }
+
+
+//Assignment Q2
+//Unable to find logic to print 0 at the end
+
+import java.util.*;
+ 
+public class GFG {
+ 
+// Recursive function to print from N to 1
+static void PrintReverseOrder(int N)
+{
+ 
+    for (int i = N; i > 0; i--)
+        System.out.print( +i + " ");
+}
+ 
+// Driver code
+public static void main(String[] args)
+{
+    int N = 3;
+ 
+    PrintReverseOrder(N);
+}
+
+}
+
+
+//Assignment 3
+
+public class FactorialExample2{  
+ static int factorial(int n){    
+  if (n == 0)    
+    return 1;    
+  else    
+    return(n * factorial(n-1));    
+ }    
+ public static void main(String args[]){  
+  int i,fact=1;  
+  int number=10;//It is the number to calculate factorial    
+  fact = factorial(number);   
+  System.out.println("Factorial of "+number+" is: "+fact);    
+ }  
+}  
+
+
+//Asssignment 4
+
+public class ReverseArray {  
+    public static void main(String[] args) {  
+        //Initialize array  
+        int [] arr = new int [] {54, 43, 2, 1, 5};  
+        System.out.println("Original array: ");  
+        for (int i = 0; i < arr.length; i++) {  
+            System.out.print(arr[i] + " ");  
+        }  
+        System.out.println();  
+        System.out.println("Array in reverse order: ");  
+        //Loop through the array in reverse order  
+        for (int i = arr.length-1; i >= 0; i--) {  
+            System.out.print(arr[i] + " ");  
+        }  
+    }  
+}  
+
+
+//Assignment 5
+
+public class Addition {
+    // Method to add two integers
+    public static int add(int a, int b) {
+        return a + b;
+    }
+
+
+
+    // Main method to test the addition
+    public static void main(String[] args) {
+        int num1 = 3;
+        int num2 = 4;
+        System.out.println("Adding integers: " + num1 + " + " + num2 + " = " + add(num1, num2));
+
+    }
+}
